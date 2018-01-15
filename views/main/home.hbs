@@ -1,0 +1,37 @@
+<div class="hero">
+	<div class="container">
+		<div class="row">
+			<div class="hero-heading">
+				Welcome to the Planet of Graphic Designers  <br/>
+				
+				<p> Design Your Future  </p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div class="container section">
+	<h1>
+		Newest Gigs
+	</h1>
+	<div class="row">
+		
+		
+		
+		
+		{{#each gigs}}
+		<div class="col-md-3">
+			<div class="gig-card">
+				<a href="/service_detail/{{ _id }}"><img src="/img/copywrite.jpg" /></a>
+				<h4>
+					{{ title }}
+				</h4>
+				<h3>
+					${{price}}
+				</h3>
+			</div>
+		</div>
+		{{/each}}
+
+	</div>
+</div>
